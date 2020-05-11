@@ -1,0 +1,27 @@
+@font-face {
+    font-family: Poppins-Bold;
+    src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Poppins-Medium;
+    src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Montserrat-Bold;
+    src: url('../fonts/montserrat/Montserrat-Bold.ttf'); 
+  }
+  
+.App-name  {
+ font-family: Poppins-Bold;
+ font-size: 8vw;
+ display:flex;
+ margin: 20%;
+ margin-left: 0px;
+ text-align: center;
+ 
+}
+.mainSection{
+  padding-top:5%;
+}

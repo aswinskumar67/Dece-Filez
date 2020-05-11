@@ -1,0 +1,60 @@
+@font-face {
+    font-family: Poppins-Bold;
+    src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Poppins-Medium;
+    src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+  }
+
+.wrapper{
+  display: grid;
+  grid-column-gap: 3%;
+  grid-template-columns: 1fr 2fr 1fr;
+  background-color:#F9FDFF;
+}
+.first{
+  background-color:white;
+  box-shadow: 5px 0px 5px rgba(170, 167, 167 ,0.05);
+  height: 100vh;
+}
+.third{
+  background-color:white;
+  box-shadow: -5px 0px 5px rgba(170, 167, 167 ,0.05);
+  height: 100vh;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.App-name1{
+  margin-top: 10%;
+}
+.First-wrapper{
+  margin-left: 15%;
+}
+.Options{
+  display: grid;
+  margin-top: 30%;
+  row-gap: 20%;
+}
+h1{
+  font-family: Poppins-Bold;
+  font-size: 1.5em;
+  color: black;
+}
+
+.singlefile{
+  background-color:white;
+  padding: 10%;
+  box-shadow: 5px 5px 10px rgba(170, 167, 167 ,0.05);
+}
+.files{
+  margin:5%;
+  border-radius:25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column-gap: 5%;
+}

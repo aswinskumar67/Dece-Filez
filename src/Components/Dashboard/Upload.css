@@ -1,0 +1,16 @@
+.formwrapper{
+    display: grid;
+    height: 100vh;
+align-content: center;
+justify-content: center;
+}
+.form1{
+    display: grid;
+    width: 50%;
+    row-gap: 5%;
+}
+.input1{
+    background-color: turquoise;
+    color: black;
+    width:50vh;
+}
