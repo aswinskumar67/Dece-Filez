@@ -1,0 +1,32 @@
+.loginwrapper{
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+}
+.loginbox{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-auto-flow: row;
+    row-gap: 25px;
+}
+.toggle{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 50% 50%;
+    width: 30vw;
+    text-align: center;
+}
+.loginformwrapper{
+    display: grid;
+    grid-auto-flow: row;
+}
+
+.loginlabel{
+    width: 150px;
+}
+.logininput{
+    width: 300px;
+}

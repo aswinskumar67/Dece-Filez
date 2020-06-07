@@ -3,11 +3,8 @@ import './Login.css';
 import Web3 from 'web3';
 import axios from 'axios';
 
-
 class Input extends React.Component{
-
 	constructor(props){
-		
 		super(props);
 			this.state= {
 					email:'',pass:'',ethadd:'',toggle:false
@@ -17,11 +14,8 @@ class Input extends React.Component{
 			this.singupSubmit = this.singupSubmit.bind(this);
 		
 	}
-	
 	async componentDidMount() {
-		// Detect Metamask
-		
-  
+        // Detect Metamask
         const metamaskInstalled = typeof window.web3 !== 'undefined'
         this.setState({ metamaskInstalled })
         if(metamaskInstalled) {
@@ -66,7 +60,7 @@ class Input extends React.Component{
 			ethadd : this.state.ethadd
 		  }
 		  console.log(user)
-		  axios.post("http://localhost:8080/user/register/login",user,{ withCredentials: true })
+		  axios.post("http://localhost:8080/user/register/login",user)
 		  .then((res) =>
 		  {
 			
@@ -93,7 +87,6 @@ class Input extends React.Component{
 	  }
     
 	render(){
-		
 		return(
 				<div className="loginwrapper">
 					<div className ="loginbox">

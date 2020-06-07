@@ -9,7 +9,7 @@
     src: url('../fonts/poppins/Poppins-Medium.ttf'); 
   }
   .singlefile{
-    background-color:white;
+    background-color:rgb(140, 218, 52);
     padding: 10%;
     box-shadow: 5px 5px 10px rgba(170, 167, 167 ,0.05);
   }
@@ -20,5 +20,11 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-column-gap: 5%;
+    height: 300px;
+  }
+
+  .filename,.filedesc,.fileowner,.filehash,.fileprice{
+    font-family: Poppins-medium;
+    font-size: 20px;
   }
   

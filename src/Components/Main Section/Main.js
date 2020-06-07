@@ -12,7 +12,7 @@ class MainComponent extends React.Component {
                     
                     <Col > <h1 className="App-name">DECE 
                         FILEZ</h1></Col>
-                    <Col > <img src={Mainimage} class="img-fluid" alt="" /></Col>
+                    <Col > <img src={Mainimage} className="img-fluid" alt="" /></Col>
                    
                  </Row>
             

@@ -62,17 +62,16 @@ class Upload extends React.Component{
             console.log(hash1)
             this.setState({ hash:hash1})
             console.log(this.state.Hash)
-            const newfile = { name : this.state.name,
-              desc : this.state.name,
-              price : this.state.price,
-              hash : this.state.hash,
-              owner: this.state.owner } ;
-              console.log(newfile)
-              axios.post("http://localhost:8080/user/upload",newfile)
-             .then(res => console.log(res.data))
           }
         })
-        
+        const newfile = { name : this.state.name,
+            desc : this.state.name,
+            price : this.state.price,
+            hash : this.state.hash,
+            owner: this.state.owner } ;
+            console.log(newfile)
+            axios.post("http://localhost:8080/user/upload",newfile)
+           .then(res => console.log(res.data))
           
       
       }

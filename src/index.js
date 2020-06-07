@@ -9,6 +9,7 @@ import Upload from './Components/Dashboard/Upload.js';
 
 import * as serviceWorker from './serviceWorker';
 import { Route , BrowserRouter as Router } from 'react-router-dom';
+import SingleFile from './Components/Dashboard/SingleFile';
 
 const routing = (
   <Router>
@@ -17,6 +18,7 @@ const routing = (
       <Route exact path="/Login-sign-up" component={Login} />
       <Route exact path="/Dashboard" component={Dashboard}/>
       <Route exact path="/Upload-Files" component={Upload}/>
+      <Route path="/Dashboard/:id" component={SingleFile}/>
       
     </div>
   </Router>
