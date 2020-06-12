@@ -8,7 +8,7 @@ import axios from 'axios';
 class Upload extends React.Component{
     constructor(props) {
         super(props);
-        this.state = {name:'',desc:'',price:'',owner:'',hash:'',buffer:''};
+        this.state = {name:'',desc:'',price:'',owner:'',hash:'',buffer:'',fileext:''};
     
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -69,7 +69,8 @@ class Upload extends React.Component{
               owner: this.state.owner } ;
               console.log(newfile)
               axios.post("http://localhost:8080/user/upload",newfile)
-             .then(res => console.log(res.data))
+             .then(res => {console.log(res.data)
+             window.location ="http://localhost:3000/Dashboard/Browse-files"})
           }
         })
         
@@ -77,10 +78,13 @@ class Upload extends React.Component{
       
       }
 
-      captureFile =(event) => {
+      captureFile = async (event) => {
         event.stopPropagation()
         event.preventDefault()
         const file = event.target.files[0]
+        const fileext = await file.name.split('.').pop()
+        this.setState({fileext:fileext})
+        console.log(this.state.fileext)
         let reader = new window.FileReader()
         reader.readAsArrayBuffer(file)
         reader.onloadend = () => this.convertToBuffer(reader)    
@@ -89,6 +93,7 @@ class Upload extends React.Component{
      convertToBuffer = async(reader) => {
       //file is converted to a buffer to prepare for uploading to IPFS
         const buffer = await Buffer.from(reader.result);
+        console.log(buffer)
       //set this buffer -using es6 syntax
         this.setState({buffer});
     };

@@ -9,22 +9,45 @@
     src: url('../fonts/poppins/Poppins-Medium.ttf'); 
   }
   .singlefile{
-    background-color:rgb(140, 218, 52);
-    padding: 10%;
+    display: grid;
+    margin-bottom: 5%;
+    background-color: #230653;
+    padding: 5%;
+    border-radius: 20px;
     box-shadow: 5px 5px 10px rgba(170, 167, 167 ,0.05);
+    width: 100%;
   }
   .files{
-    margin:5%;
-    border-radius:25px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-column-gap: 5%;
-    height: 300px;
+    row-gap: 20%;
+  
+    
   }
 
   .filename,.filedesc,.fileowner,.filehash,.fileprice{
-    font-family: Poppins-medium;
-    font-size: 20px;
+    font-family: Poppins-Medium;
+    font-size: 1em;
+    color :#f0f0f0
   }
-  
+  .filename{
+    font-family: Poppins-Bold;
+    font-size: 2em;
+    color: white;
+  }
+  .filedesc{
+    font-family: Poppins-Medium;
+    font-size: 1em;
+    color: #f0f0f0;
+  }
+  .Buybutton{
+    font-family: Poppins-Medium;
+    font-size: 1em;
+    background-color:white;
+    width: 20%;
+    border-radius: 10%;
+    padding: 5px;
+    margin-top: 20px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+  }

@@ -18,8 +18,8 @@ class Logout extends Component {
     render() {
        
         return (
-            <div>
-                <h3 onClick={this.HandleClick}>Logout</h3>
+            <div style={{display:"grid" , alignContent:"center" , justifyContent:"center" }}>
+                <h3  onClick={this.HandleClick}>Logout</h3>
             </div>
         );
     }

@@ -36,18 +36,21 @@ class Dashboard extends React.Component{
                             <h1>DECE FILES</h1>
                         </div>
                         <div className="Options">
-                            <a href="/Browse"><h1>Browse Files</h1></a>
-                            <a href="/My-files"><h1>Seller Mode</h1></a>
+                            <a href="./Browse-files"><h3 className="Optionstext">Browse Files</h3></a>
+                            <a href="/My-files"><h3 className="Optionstext">Seller Mode</h3></a>
                         </div>
                     </div>
                     
                 </div>
                 <div className="second">
-                        <Files/>
+                     <div><h1 className="Allfiles">All Files</h1></div>
+                       <div> <Files/> </div>
                 </div>
                 <div className="third">
-                    <Logout/>
-                    <a href="/Upload-Files"><h1>Upload Files</h1></a>
+                    <div className="thirdscroll">
+                    <div><Logout/></div>
+                   <div> <a href="/Upload-Files"><div className="Upload"><h1 className="Uploadtext">Upload Files</h1></div></a></div>
+                   </div>
                 </div>
                 </div>
     }

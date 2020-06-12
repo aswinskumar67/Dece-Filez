@@ -16,9 +16,9 @@ const routing = (
     <div>
       <Route exact path="/" component={App} />
       <Route exact path="/Login-sign-up" component={Login} />
-      <Route exact path="/Dashboard" component={Dashboard}/>
+      <Route exact path="/Dashboard/Browse-files" component={Dashboard}/>
       <Route exact path="/Upload-Files" component={Upload}/>
-      <Route path="/Dashboard/:id" component={SingleFile}/>
+      <Route path="/Dashboard/Browse-files/:id" component={SingleFile}/>
       
     </div>
   </Router>

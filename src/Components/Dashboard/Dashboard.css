@@ -18,16 +18,33 @@
   background-color:white;
   box-shadow: 5px 0px 5px rgba(170, 167, 167 ,0.05);
   height: 100vh;
+  display: grid;
+  position: fixed;
+  width: 25%;
+  
+}
+.second{
+  display: grid;
+  
+  align-content: center;
+  justify-content: center;
+  width: 100vw;
 }
 .third{
   background-color:white;
   box-shadow: -5px 0px 5px rgba(170, 167, 167 ,0.05);
   height: 100vh;
   display: grid;
+  margin-left: 75%;
+  width: 25%;
+  position: fixed;
   align-content: center;
   justify-content: center;
 }
-
+.thirdscroll{
+  align-content: center;
+  justify-content: center;
+}
 .App-name1{
   margin-top: 10%;
 }
@@ -44,4 +61,35 @@ h1{
   font-size: 1.5em;
   color: black;
 }
+.Upload{
+  background-color: #230653;
+  width: 120%;
+  height: 120%;
+  border-radius: 10px;
+  
+}
+.Optionstext{
+  font-family: Poppins-Medium;
+  font-size: 1em;
+  color: rgb(75, 75, 75);
+  font-weight: 600;
+}
+.Optionstext:active{
+  font-family: Poppins-Medium;
+  font-size: 1em;
+  color: black;
+  font-weight: 600;
+}
+.Uploadtext{
+color: white;
+padding: 5%;
 
+}
+.Allfiles{
+  font-family: Poppins-Bold;
+  font-size: 3em;
+  color: black;
+  margin-left : 5%;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}

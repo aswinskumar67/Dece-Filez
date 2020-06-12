@@ -72,7 +72,7 @@ class Input extends React.Component{
 			
 			if(res.status === 200) {
 				const { history } = this.props;
-				history.push("/Dashboard")
+				history.push("/Dashboard/Browse-files")
 			} 	}  )
 		  }
 	  

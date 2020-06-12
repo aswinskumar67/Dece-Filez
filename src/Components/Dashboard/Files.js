@@ -18,12 +18,14 @@ class Files extends React.Component{
     }
     render(){
         return(
+             <div className="files">
             <div>
-                {console.log(this.state.files)}
+                
                 {this.state.files.map((file) =>
                 
-                <div className="files" key={file.name}>
-                <div className="singlefile">
+               
+                <div className="singlefile" key={file._id} >
+                    
                     <div >
                         <h2 className="filename">File Name : {file.name}</h2>
                     </div>
@@ -40,14 +42,14 @@ class Files extends React.Component{
                         <h3 className="filehash">Verify hash : {file.hash}</h3>
                      </div>
                      <div >
-                        <button ><Link to={`/Dashboard/${file._id}`}>buy</Link></button>
+                        <div className="Buybutton"><Link to={`/Dashboard/Browse-files/${file._id}`}>buy</Link></div>
                      </div>
                 </div>
                
             
-            </div>
+            
                 )};
-                            
+             </div>               
          </div>
         )
     }
