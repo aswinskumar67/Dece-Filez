@@ -66,7 +66,7 @@ class Input extends React.Component{
 			ethadd : this.state.ethadd
 		  }
 		  console.log(user)
-		  axios.post("http://localhost:8080/user/register/login",user,{ withCredentials: true })
+		  axios.post("https://localhost:8080/user/register/login",user,{ withCredentials: true })
 		  .then((res) =>
 		  {
 			
@@ -84,7 +84,7 @@ class Input extends React.Component{
 			ethadd : this.state.ethadd
 		  }
 		  console.log(user);
-		  axios.post("http://localhost:8080/user/register",user)
+		  axios.post("https://localhost:8080/user/register",user)
 		  .then((res) =>
 		  {
 			console.log(res.data)

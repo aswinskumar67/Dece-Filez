@@ -8,9 +8,9 @@ class Logout extends Component {
         this.HandleClick = this.HandleClick.bind(this)
     }
     async HandleClick () {
-        Axios.get("http://localhost:8080/user/logout",{withCredentials:true}).then((res) => {
+        Axios.get("https://localhost:8080/user/logout",{withCredentials:true}).then((res) => {
             console.log("hii")
-            window.location = "http://localhost:3000/"
+            window.location = "https://localhost:3000/"
             
         }
         )

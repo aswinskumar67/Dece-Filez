@@ -68,9 +68,9 @@ class Upload extends React.Component{
               hash : this.state.hash,
               owner: this.state.owner } ;
               console.log(newfile)
-              axios.post("http://localhost:8080/user/upload",newfile)
+              axios.post("https://localhost:8080/user/upload",newfile)
              .then(res => {console.log(res.data)
-             window.location ="http://localhost:3000/Dashboard/Browse-files"})
+             window.location ="https://localhost:3000/Dashboard/Browse-files"})
           }
         })
         

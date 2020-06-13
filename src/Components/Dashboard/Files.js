@@ -9,7 +9,7 @@ class Files extends React.Component{
         console.log(this.state.id)
     }
     async componentWillMount(){
-        axios.get("http://localhost:8080/myfiles",{withCredentials:true}).then((res) =>{
+        axios.get("https://localhost:8080/myfiles",{withCredentials:true}).then((res) =>{
             this.setState({files : res.data});
             console.log(this.state.files)
             

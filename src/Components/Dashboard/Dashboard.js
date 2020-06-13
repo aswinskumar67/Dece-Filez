@@ -12,7 +12,7 @@ class Dashboard extends React.Component{
        
             
         
-        Axios.get("http://localhost:8080/user",{withCredentials:true}).then((res,err) => {
+        Axios.get("https://localhost:8080/user",{withCredentials:true}).then((res,err) => {
             if(res.status === 200) {
                 this.setState({loading : false })
 
@@ -21,7 +21,7 @@ class Dashboard extends React.Component{
            
     ).catch((err)=> {
         alert("Login to Continue")
-        window.location="http://localhost:3000/"})
+        window.location="https://localhost:3000/"})
     }
     render(){
         const {loading} = this.state;

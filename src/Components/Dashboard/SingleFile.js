@@ -49,9 +49,9 @@ class SingleFile extends React.Component{
     }
     componentWillUpdate(){
       window.ethereum.on('accountsChanged', function (accounts) {
-        Axios.get("http://localhost:8080/user/logout",{withCredentials:true}).then((res) => {
+        Axios.get("https://localhost:8080/user/logout",{withCredentials:true}).then((res) => {
           window.alert("Account Change Detected")
-          window.location ="http://localhost:3000/Login-sign-up"
+          window.location ="https://localhost:3000/Login-sign-up"
       })
         
       })
@@ -60,7 +60,7 @@ class SingleFile extends React.Component{
     componentWillMount(){
         
         
-        Axios.get(`http://localhost:8080/myfiles/${this.props.match.params.id}`,{withCredentials:true}).then((res) =>
+        Axios.get(`https://localhost:8080/myfiles/${this.props.match.params.id}`,{withCredentials:true}).then((res) =>
         {
             this.setState({file:res.data})
             

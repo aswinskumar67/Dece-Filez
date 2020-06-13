@@ -9,7 +9,8 @@
 
 # production
 /build
-
+dece.cer 
+new.cer
 # misc
 .DS_Store
 .env.local
