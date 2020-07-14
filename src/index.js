@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Login from './Components/Login/Login.js';
+import Input from './Components/Login/Login';
 import 'bootstrap/dist/css/bootstrap.css';
 import Dashboard from './Components/Dashboard/Dashboard.js';
 import Upload from './Components/Dashboard/Upload.js';
@@ -15,7 +15,7 @@ const routing = (
   <Router>
     <div>
       <Route exact path="/" component={App} />
-      <Route exact path="/Login-sign-up" component={Login} />
+      <Route exact path="/Login-sign-up" component={Input} />
       <Route exact path="/Dashboard/Browse-files" component={Dashboard}/>
       <Route exact path="/Upload-Files" component={Upload}/>
       <Route path="/Dashboard/Browse-files/:id" component={SingleFile}/>

@@ -28,7 +28,7 @@ class Input extends React.Component{
           await this.loadWeb3()
           await this.loadBlockchainData() 
         }
-	  }
+	  }  
 	  handleChange(event) {
         this.setState({[event.target.name]:event.target.value});
       }
@@ -99,10 +99,10 @@ class Input extends React.Component{
 					<div className ="loginbox">
 						<div className="toggle">
 						
-							<div><button onClick={ () => this.ToggleButton() }>
+							<div><button className="loginbutton" onClick={ () => this.ToggleButton() }>
                 				  Login
                 				</button></div>
-							<div><button onClick={ () => this.ToggleButton() }>
+							<div><button className="loginbutton" onClick={ () => this.ToggleButton() }>
                 				  Signup
                 				</button></div>
 						</div>

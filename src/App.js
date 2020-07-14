@@ -13,7 +13,7 @@ function App() {
         <Row>
           <Col><Head1/></Col>
         </Row>
-        <Row>
+        <Row> 
           <Col><MainComponent/></Col>
         </Row>
         

@@ -2,6 +2,7 @@ import React from 'react';
 import './Files.css';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+
 class Files extends React.Component{
     constructor(props){
         super(props)
@@ -36,11 +37,9 @@ class Files extends React.Component{
                         <h3 className="fileowner">Owner : {file.owner}</h3>
                     </div>
                     <div >
-                        <h3 className="fileprice">Price : {file.price}</h3>
+                        <h3 className="fileprice">Price : {file.price/Math.pow(10,18)} Eth</h3>
                      </div>
-                     <div >
-                        <h3 className="filehash">Verify hash : {file.hash}</h3>
-                     </div>
+                    
                      <div >
                         <div className="Buybutton"><Link to={`/Dashboard/Browse-files/${file._id}`}>buy</Link></div>
                      </div>

@@ -3,6 +3,8 @@ import './Upload.css';
 import Web3 from 'web3';
 import ipfs from './Ipfs.js';
 import axios from 'axios';
+var CryptoJS = require("crypto-js");
+require('dotenv/config');
 
 
 class Upload extends React.Component{
@@ -49,7 +51,7 @@ class Upload extends React.Component{
       }
     
       handleSubmit = async (event) => {
-      
+        console.log("Uploading")
         event.preventDefault();
         await ipfs.add(this.state.buffer,(err,res)=>{
           console.log("IPFS working...")
@@ -60,17 +62,28 @@ class Upload extends React.Component{
           else{
             var hash1 = res[0].hash
             console.log(hash1)
-            this.setState({ hash:hash1})
+            const enchash =  CryptoJS.AES.encrypt(hash1, 'secret key 123').toString();
+            var bytes  = CryptoJS.AES.decrypt(enchash, 'secret key 123');
+var originalText = bytes.toString(CryptoJS.enc.Utf8);
+
+
+            console.log(enchash)
+            console.log(originalText)
+            this.setState({ hash:enchash})
             console.log(this.state.Hash)
             const newfile = { name : this.state.name,
               desc : this.state.name,
               price : this.state.price,
               hash : this.state.hash,
-              owner: this.state.owner } ;
+              owner: this.state.owner ,
+              fileext : this.state.fileext} ;
               console.log(newfile)
               axios.post("https://localhost:8080/user/upload",newfile)
              .then(res => {console.log(res.data)
-             window.location ="https://localhost:3000/Dashboard/Browse-files"})
+              if(window.confirm("File upload successfull")){
+                window.location ="https://localhost:3000/Dashboard/Browse-files"
+              }
+            })
           }
         })
         

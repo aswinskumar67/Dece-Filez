@@ -1,9 +1,19 @@
+@font-face {
+    font-family: Poppins-Bold;
+    src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Poppins-Medium;
+    src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+  }
 .loginwrapper{
     justify-content: center;
     align-content: center;
     display: grid;
     height: 100vh;
     width: 100vw;
+    background-color: #000040;
 }
 .loginbox{
     display: grid;
@@ -26,7 +36,17 @@
 
 .loginlabel{
     width: 150px;
+    color: white;
+    font-family:  Poppins-Medium;
 }
 .logininput{
     width: 300px;
+    border-radius: 5px;
+}
+.loginbutton{
+    border-radius: 5px;
+    background: white;
+    padding: 5px;
+    font-family:  Poppins-Medium;
+    width: 100px;
 }
