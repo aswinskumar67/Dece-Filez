@@ -1,0 +1,50 @@
+.LoginSignupWrapper{
+    display:grid;
+    grid-auto-flow: column;
+    align-content: center;
+    justify-content:center;
+    grid-template-columns: 44.5% 1% 44.5%;
+    height:100%;
+}
+.CurrentWrapper{ 
+    display: grid;
+    row-gap: 2em;
+    align-content: center;
+    justify-content:center;
+}
+.LoginSignupHeading{
+    font-size: 2em;
+    font-family: Montserrat-ExtraBold;
+    color: white
+}
+.HeadingWrapper{
+    display: grid;
+    align-content: center;
+    justify-content:center;
+}
+.OtherWrapper{
+    display: grid;
+    align-items: center;
+    justify-content:center;
+    height:100%;
+    width:100%;
+}
+.LoginSignupButton{
+    background-color: #0499FF;
+    border: none;
+    color: white;
+    border-radius:10px;
+    padding: 0.5em 4em;
+    text-align: center;
+    font-family : Montserrat-Medium;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.Line{
+    width:1px;
+    
+    background-color:white;
+}

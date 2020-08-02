@@ -1,0 +1,13 @@
+.InputWrapper2{
+    display: grid;
+    width: 500px;
+    background-color: aqua;
+    height:40px;
+}
+.InputParentDiv{
+    display: grid;
+}
+.InputGap{
+    display: grid;
+    row-gap:2em;
+}

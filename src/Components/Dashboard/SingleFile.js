@@ -130,7 +130,9 @@ class SingleFile extends React.Component{
                  <div >
                         <button onClick={this.handleclick} >buy</button>
                      </div>
+                    
                  </div>
+                 
             )
         }
 }

@@ -43,7 +43,7 @@ class Head1 extends Component {
                             </NavItem>
 
                             <NavItem>
-                                <NavLink href="/Contact-us">Contact Us</NavLink>
+                                <NavLink href="/New-Main">Newmain</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink href="/Dashboard/Browse-files">Dashboard</NavLink>

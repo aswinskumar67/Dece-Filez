@@ -1,0 +1,155 @@
+@font-face {
+    font-family: Montserrat-ExtraBold;
+    src: url('../fonts/montserrat/Montserrat-ExtraBold.ttf'); 
+  }
+  @font-face {
+    font-family: Montserrat-Medium;
+    src: url('../fonts/montserrat/Montserrat-Medium.ttf'); 
+  }
+  @font-face {
+    font-family: Montserrat-SemiBold;
+    src: url('../fonts/montserrat/Montserrat-SemiBold.ttf'); 
+  }
+
+
+.MainPageWrapper{
+    display: grid;
+    background-color: #05002D;
+    height: 100vh;
+    grid-template-rows: 15vh 70vh 15vh;
+}
+.MainHeaderWrapper{
+    width: 100%;
+     display: grid;
+     grid-auto-flow: column;
+     height: 15vh;
+     align-content: center;
+     align-items: center;
+     align-self: center;
+     
+}
+
+.MainHeader{
+    width: 100%;
+     display: grid;
+     grid-auto-flow: column;
+     justify-content: space-between;
+     
+}
+.MainLogoWrap{
+    display: grid;
+    padding-left: 70px;
+    align-content: center;
+}
+.MainLogo{
+    text-align: center;
+    font-family: Montserrat-ExtraBold;
+    font-size: 20px;
+    color: white;
+}
+.MainOptionsWrapper{
+    display: grid;
+     grid-auto-flow: column;
+     padding-right: 50px;
+
+}
+.OptionsWrap{
+    display: grid;
+    width: 200px;
+    align-content: center;
+    justify-content: center;
+   
+}
+
+.MainOptionsButton{
+    background-color: #0499FF;
+    border: none;
+    color: white;
+    border-radius:10px;
+    padding: 0.3em 2em;
+    text-align: center;
+    font-family : Montserrat-Medium;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.MainOptions{
+    font-family: Montserrat-SemiBold;
+    font-size: 16px;
+    color: white;
+}
+.Color{
+    color: #05002D;
+}
+.MainContentWrapper{
+    display: grid;
+    grid-template-columns: 45% 55%;
+  }
+  
+  .MainLeftWrapper{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    padding-left: 118px;
+  }
+.MainCaption{
+    font-family: Montserrat-SemiBold;
+    font-size: 24px;
+    color: white;
+    padding-bottom: 15px;
+}
+.MainTitle{
+    font-family: Montserrat-ExtraBold;
+    font-size: 56px;
+    color: white;
+    line-height: 74px;
+}
+.MainTitleColor{
+    color:#0599FF
+}
+.BoundingBox2{
+     margin-top: 20px;
+     height:2.5em;
+}
+.MainRightWrapper{
+    display: grid;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+}
+.MainImage{
+    display: grid;
+    position: relative;
+
+    background: url('../Images/Image1.png');
+    background-repeat: no-repeat;
+    background-color:#05002D;
+    width: 596px;
+    height: 445px;
+    background-color: none;
+    background-blend-mode: hard-light;
+
+}
+.MainBottom{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    height:100%;
+    grid-auto-flow: column;
+}
+.BottomText{
+    font-family: Montserrat-Medium;
+    font-size: 14px;
+    color: white;
+    padding-right: 77px;
+    padding-left: 77px;
+}
+.BottomSep{
+    width: 2px;
+    height: 18px;
+    background-color: white;
+}
